@@ -26,7 +26,7 @@ class Application
       if @@items.include?(add_item)
         resp.write "added #{add_item}"
       else 
-        "We don't have that item"
+        resp.write "We don't have that item"
       end
     else
       resp.write "Path Not Found"
